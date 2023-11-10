@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016951583059d43468d24a6236ccc291, type: 3}
+  m_Name: 1HShComboAttack2
+  m_EditorClassIdentifier: 
+  <AnimationName>k__BackingField: 1H&Sh Strong Base Attack 1
+  <AttackGripNumber>k__BackingField: 12
+  <TransisionDuration>k__BackingField: 0.3
+  <ComboAniamtion>k__BackingField: 0
+  <BlockableAttack>k__BackingField: 0
+  <RightHand>k__BackingField: 01
+  <RotateTowardsEnemyTimer>k__BackingField: 0.14
+  <CriticChance>k__BackingField: 0.3
+  <NextAttackWindow>k__BackingField: 0.39
+  <NextAttackStartTime>k__BackingField: 0.6
+  <EndAttackTime>k__BackingField: 0.82
+  <BlockCrossFadeDuration>k__BackingField: 0.2
+  <AttackRange>k__BackingField:
+  - 1.5
+  <ForceTimers>k__BackingField:
+  - 0.185
+  <ArmAttackTimes>k__BackingField:
+  - 0.2
+  <DisarmAttackTimes>k__BackingField:
+  - 0.33
+  <BlockedAnimTimers>k__BackingField: []
+  <ReDoBlockedAttackTimers>k__BackingField: []
+  <MoveForces>k__BackingField:
+  - 3
+  <Knockbacks>k__BackingField:
+  - 8
+  <Damages>k__BackingField: 22000000
+  <BlockCost>k__BackingField: 14000000
+  <manaCost>k__BackingField: 0
+  <powerCost>k__BackingField: 10
+  <Speed>k__BackingField: medium
+  <Description>k__BackingField: Strong outward slash. It will knockback enemies.
+  <MultipleAttack>k__BackingField: 0
+  <AnimationSpeedCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0013694763
+      value: 0.8894882
+      inSlope: -1.0331781
+      outSlope: -1.0331781
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.03596098
+      value: 0.85374904
+      inSlope: -1.4378058
+      outSlope: -1.4378058
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.800293
+    - serializedVersion: 3
+      time: 0.12934205
+      value: 0.7055859
+      inSlope: -0.5490808
+      outSlope: -0.5490808
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.29453263
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.22599149
+      value: 0.5296839
+      inSlope: 0.04115036
+      outSlope: 0.04115036
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.15021051
+      outWeight: 0.8741503
+    - serializedVersion: 3
+      time: 0.3331973
+      value: 0.53907967
+      inSlope: 0.2325286
+      outSlope: 0.2325286
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.72896034
+      outWeight: 0.15931684
+    - serializedVersion: 3
+      time: 0.47259486
+      value: 0.997303
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5821973
+      value: 0.84636307
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.68116397
+      value: 0.8641463
+      inSlope: 1.223014
+      outSlope: 1.223014
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.73699933
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  <SpecialEffects>k__BackingField: 0
+  <AnimationSpecialEffectsCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

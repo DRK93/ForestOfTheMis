@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016951583059d43468d24a6236ccc291, type: 3}
+  m_Name: 1HShSPAttack1
+  m_EditorClassIdentifier: 
+  <AnimationName>k__BackingField: 1H&Sh Special Attack 1
+  <AttackGripNumber>k__BackingField: 11
+  <TransisionDuration>k__BackingField: 0.2
+  <ComboAniamtion>k__BackingField: 0
+  <BlockableAttack>k__BackingField: 0
+  <RightHand>k__BackingField: 01010001
+  <RotateTowardsEnemyTimer>k__BackingField: 0.1
+  <CriticChance>k__BackingField: 0.2
+  <NextAttackWindow>k__BackingField: 0.73
+  <NextAttackStartTime>k__BackingField: 0.86
+  <EndAttackTime>k__BackingField: 0.94
+  <BlockCrossFadeDuration>k__BackingField: 0.12
+  <AttackRange>k__BackingField:
+  - 1.4
+  - 1.4
+  - 1.2
+  - 1.2
+  <ForceTimers>k__BackingField:
+  - 0.13
+  - 0.32
+  - 0.43
+  - 0.6
+  <ArmAttackTimes>k__BackingField:
+  - 0.17
+  - 0.32
+  - 0.44
+  - 0.67
+  <DisarmAttackTimes>k__BackingField:
+  - 0.22
+  - 0.38
+  - 0.48
+  - 0.725
+  <BlockedAnimTimers>k__BackingField: []
+  <ReDoBlockedAttackTimers>k__BackingField: []
+  <MoveForces>k__BackingField:
+  - 2
+  - 2
+  - 2
+  - 1
+  <Knockbacks>k__BackingField:
+  - 3
+  - 3
+  - 1
+  - 7
+  <Damages>k__BackingField: 12000000100000000f00000018000000
+  <BlockCost>k__BackingField: 09000000090000000900000009000000
+  <manaCost>k__BackingField: 12
+  <powerCost>k__BackingField: 0
+  <Speed>k__BackingField: slow
+  <Description>k__BackingField: Unleash fury. Throw 4 strikes on enemy and destroy
+    it.
+  <MultipleAttack>k__BackingField: 1
+  <AnimationSpeedCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.2839346
+      outSlope: -0.2839346
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.07842021
+      value: 0.9777338
+      inSlope: -0.32149658
+      outSlope: -0.32149658
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.11154422
+      value: 0.8996597
+      inSlope: -0.5490808
+      outSlope: -0.5490808
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.29453263
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.18627572
+      value: 0.85043967
+      inSlope: 0.46727866
+      outSlope: 0.46727866
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.15021051
+      outWeight: 0.08870406
+    - serializedVersion: 3
+      time: 0.29348117
+      value: 0.95687336
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.15931684
+    - serializedVersion: 3
+      time: 0.34110206
+      value: 0.8382709
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.40144378
+      value: 0.9544662
+      inSlope: 0.097447544
+      outSlope: 0.097447544
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.46175146
+      value: 0.91830766
+      inSlope: 0.05198522
+      outSlope: 0.05198522
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5055646
+      value: 0.99566615
+      inSlope: 0.037356462
+      outSlope: 0.037356462
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.59605426
+      value: 1.0747705
+      inSlope: -0.3188547
+      outSlope: -0.3188547
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.69458103
+      value: 0.94114393
+      inSlope: 0.022922516
+      outSlope: 0.022922516
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.75482255
+      value: 0.98325205
+      inSlope: 0.13161917
+      outSlope: 0.13161917
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.06830951
+      outSlope: 0.06830951
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  <SpecialEffects>k__BackingField: 0
+  <AnimationSpecialEffectsCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

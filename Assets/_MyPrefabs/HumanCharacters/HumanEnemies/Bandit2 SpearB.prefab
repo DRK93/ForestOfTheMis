@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &539712584031405002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2157503854603333825, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_Name
+      value: Bandit2 SpearB
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 80.61321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.555664
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 261.24283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.65504307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7555915
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -261.846
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286736082235452895, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517918908159298764, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: mainWeapon
+      value: 
+      objectReference: {fileID: 8953268624520306191}
+    - target: {fileID: 7568086665513405976, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880280277984665029, guid: cb5c28c48139b9b4ab2441cc4a326846,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb5c28c48139b9b4ab2441cc4a326846, type: 3}
+--- !u!1 &8953268624520306191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8880280277984665029, guid: cb5c28c48139b9b4ab2441cc4a326846,
+    type: 3}
+  m_PrefabInstance: {fileID: 539712584031405002}
+  m_PrefabAsset: {fileID: 0}

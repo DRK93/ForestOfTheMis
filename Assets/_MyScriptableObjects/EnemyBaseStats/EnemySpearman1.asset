@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b463bcfd22ae61b48a97aa13334f4fad, type: 3}
+  m_Name: EnemySpearman1
+  m_EditorClassIdentifier: 
+  <EnemyHealth>k__BackingField: 200
+  <EnemyValue>k__BackingField: 100
+  <RunningSpeed>k__BackingField: 6
+  <WalkingSpeed>k__BackingField: 3
+  <DetectionRange>k__BackingField: 14
+  <CriticChance>k__BackingField: 0.2
+  <EnemyLevel>k__BackingField: 2
+  <EnemyName>k__BackingField: Mercenary
+  <SwordmanshipLevel>k__BackingField: 2
+  <CounterRate>k__BackingField: 2
+  <enemyLocomotion>k__BackingField: 2
+  <AttackList>k__BackingField:
+  - {fileID: 11400000, guid: 5c957d5fb2c618d40b9ba48a71a40dbe, type: 2}
+  - {fileID: 11400000, guid: b43b38b2084223349b44a34ec3e0f9af, type: 2}
+  - {fileID: 11400000, guid: 4fec6f71d76e7ef4daa9999a6d2512e6, type: 2}
+  <BlockList>k__BackingField:
+  - {fileID: 11400000, guid: f74d2cb87e261984a8e653dc8911efeb, type: 2}
+  - {fileID: 11400000, guid: 539b1d8f93f39614ab21f1cdf52836d2, type: 2}
+  <CounterList>k__BackingField:
+  - {fileID: 11400000, guid: dbc007c3c56941c4da2a94945a3f4ffe, type: 2}
+  <SpecialAttack>k__BackingField:
+  - {fileID: 11400000, guid: 8cdf4e1d5812f7943bac12d19a2a0e09, type: 2}
+  <EnemySchemes>k__BackingField:
+  - {fileID: 11400000, guid: 165b53ce979f8c74ab27428fe83e0a3b, type: 2}
+  - {fileID: 11400000, guid: cb62ce006ce14f04d8869c2066b5a7ae, type: 2}
+  - {fileID: 11400000, guid: 7f53b4dfc409e214ca82b84ab6064fc6, type: 2}
+  - {fileID: 11400000, guid: 59c10238b3b15ac468e69fc9fd69f548, type: 2}
+  - {fileID: 11400000, guid: 690716c5565f59145a08474d03bd5c21, type: 2}
+  - {fileID: 11400000, guid: 3496b60cabe30d246a756b99f801010e, type: 2}

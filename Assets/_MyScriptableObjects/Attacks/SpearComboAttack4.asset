@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016951583059d43468d24a6236ccc291, type: 3}
+  m_Name: SpearComboAttack4
+  m_EditorClassIdentifier: 
+  <AnimationName>k__BackingField: Spear Swing 1
+  <AttackGripNumber>k__BackingField: 82
+  <TransisionDuration>k__BackingField: 0.2
+  <ComboAniamtion>k__BackingField: 0
+  <BlockableAttack>k__BackingField: 0
+  <RightHand>k__BackingField: 01
+  <RotateTowardsEnemyTimer>k__BackingField: 0.1
+  <CriticChance>k__BackingField: 0.2
+  <NextAttackWindow>k__BackingField: 0.36
+  <NextAttackStartTime>k__BackingField: 0.69
+  <EndAttackTime>k__BackingField: 0.86
+  <BlockCrossFadeDuration>k__BackingField: 0.2
+  <AttackRange>k__BackingField:
+  - 1.7
+  <ForceTimers>k__BackingField:
+  - 0.22
+  <ArmAttackTimes>k__BackingField:
+  - 0.17
+  <DisarmAttackTimes>k__BackingField:
+  - 0.27
+  <BlockedAnimTimers>k__BackingField: []
+  <ReDoBlockedAttackTimers>k__BackingField: []
+  <MoveForces>k__BackingField:
+  - 1
+  <Knockbacks>k__BackingField:
+  - 4
+  <Damages>k__BackingField: 1e000000
+  <BlockCost>k__BackingField: 14000000
+  <manaCost>k__BackingField: 0
+  <powerCost>k__BackingField: 10
+  <Speed>k__BackingField: fast
+  <Description>k__BackingField: Swing throught your enemies. It will surprise them.
+  <MultipleAttack>k__BackingField: 0
+  <AnimationSpeedCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0041095912
+      value: 1.0134771
+      inSlope: -0.4817178
+      outSlope: -0.4817178
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.10444839
+      value: 0.9611828
+      inSlope: -0.32149658
+      outSlope: -0.32149658
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.18630898
+      value: 0.6819412
+      inSlope: -0.5490808
+      outSlope: -0.5490808
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.29453263
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3657463
+      value: 0.7345983
+      inSlope: 0.46727866
+      outSlope: 0.46727866
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.15021051
+      outWeight: 0.08870406
+    - serializedVersion: 3
+      time: 0.44520506
+      value: 0.99730587
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.15931684
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.0048560826
+      outSlope: 0.0048560826
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  <SpecialEffects>k__BackingField: 0
+  <AnimationSpecialEffectsCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

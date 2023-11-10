@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3895633234035106225
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1396400819223884648, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: mainWeapon
+      value: 
+      objectReference: {fileID: 5697810854160446538}
+    - target: {fileID: 1396400819223884648, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: secondWeapon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 76.26632
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.079489
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 265.51935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.65504307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7555915
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -261.846
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634340110596182651, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252426304810325230, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468653770275458917, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bandit1 SpearA
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100273290703031077, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719708857536304635, guid: 3510686967383d34893247e7a82bc1c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3510686967383d34893247e7a82bc1c0, type: 3}
+--- !u!1 &5697810854160446538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8719708857536304635, guid: 3510686967383d34893247e7a82bc1c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3895633234035106225}
+  m_PrefabAsset: {fileID: 0}
