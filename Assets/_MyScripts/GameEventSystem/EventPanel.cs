@@ -5,7 +5,6 @@ using _MyScripts.Player;
 using _MyScripts.QuestSystem;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Rendering;
 
 namespace _MyScripts.GameEventSystem
 {
@@ -15,16 +14,17 @@ namespace _MyScripts.GameEventSystem
         public GameObject textObject;
         [SerializeField] private AllQuestsInOnePlace allQuestsBase;
         [SerializeField] private QuestManager questManager;
+        [SerializeField] private GameEventManager gameEventManager;
+        public EventScriptableObject eventUnfold;
         public string eventText;
         public List<GameObject> eventOptionsButtons;
-        public List<int> optionsQuestId;
         public int optionsNumber = 0;
         
         // there is a need for connection of eventData to eventManager, Quest Jouranl etc.
 
         private void Start()
         {
-            optionsQuestId = new List<int>();
+            
         }
 
         public void ShowEventPanel(EventScriptableObject myEventData)
@@ -32,7 +32,6 @@ namespace _MyScripts.GameEventSystem
             int optinonsCount = myEventData.eventOptionsNumber;
             string eventText = myEventData.eventText;
             List<string> optionsButtonsTexts = myEventData.eventOptionText;
-            optionsQuestId = myEventData.questIDs;
             eventPanel.SetActive(true);
             EventText(eventText);
             SetOptionsNumber(optinonsCount, optionsButtonsTexts);
@@ -61,13 +60,67 @@ namespace _MyScripts.GameEventSystem
 
         public void EventButtonOptionCLick(int buttonNumber)
         {
-            SendQuestId(buttonNumber);
+            DoEventFromOption(buttonNumber);
+            // do something with choses option
             HideEventPanel();
         }
 
-        private void SendQuestId(int index)
+        private void DoEventFromOption(int numeber)
         {
-            questManager.AddNewQuest(allQuestsBase.GetQuest(optionsQuestId[index]));
+            if (eventUnfold.eventOptionsNumber > numeber)
+            {
+                // safety check
+            }
+            else 
+            {
+                switch (eventUnfold.eventTypes[numeber])
+                {
+                    case EventScriptableObject.EventType.SpawnQuest:
+                        questManager.AddNewQuest(allQuestsBase.GetQuest(eventUnfold.questIDs[numeber]));
+                        break;
+                    case EventScriptableObject.EventType.SpawnItem:
+                        // safety check
+                        if (eventUnfold.questIDs[numeber]!= 0)
+                            gameEventManager.SpawnObject(eventUnfold.questIDs[numeber]);
+                        break;
+                    case EventScriptableObject.EventType.SpawnEnemy:
+                        if (eventUnfold.questIDs[numeber]!= 0)
+                            gameEventManager.SpawnEnemies(eventUnfold.questIDs[numeber]);
+                        break;
+                    case EventScriptableObject.EventType.Cutscene:
+                        PlayCutscene();
+                        break;
+                    case EventScriptableObject.EventType.LocationChange:
+                        if (eventUnfold.questIDs[numeber]!= 0)
+                            gameEventManager.ChangeScenery(eventUnfold.questIDs[numeber]);
+                        break;
+                }
+            }
+        }
+        
+        private void SendQuestId(int questID)
+        {
+            
+        }
+
+        private void ReleaseEnemies()
+        {
+            
+        }
+
+        private void SpawnObject()
+        {
+            
+        }
+
+        private void PlayCutscene()
+        {
+            
+        }
+
+        private void ChangeScenery()
+        {
+            
         }
         private void OnDisable()
         {
@@ -83,11 +136,11 @@ namespace _MyScripts.GameEventSystem
             }
         }
 
-        public void HideEventPanel()
+        private void HideEventPanel()
         {
             ClearEventPanel();
-            eventPanel.SetActive(false);
             LetPlayerMove();
+            eventPanel.SetActive(false);
         }
 
         public void StopPlayer()

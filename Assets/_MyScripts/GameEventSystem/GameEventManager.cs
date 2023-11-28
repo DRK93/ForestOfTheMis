@@ -24,6 +24,26 @@ namespace _MyScripts.GameEventSystem
         {
         
         }
+
+        public void SpawnEnemies(int questId)
+        {
+            
+        }
+
+        public void SpawnObject(int questId)
+        {
+            
+        }
+
+        public void ChangeScenery(int questId)
+        {
+            
+        }
+
+        public void SendEventToJournal(EventScriptableObject eventHappend)
+        {
+            
+        }
     }
 }
 

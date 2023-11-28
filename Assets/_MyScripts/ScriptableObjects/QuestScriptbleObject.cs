@@ -11,6 +11,7 @@ public class QuestScriptbleObject : ScriptableObject
         Investigate,
         BringItem,
         Talk,
+        UnOfficial,
         Empty
     }
     
@@ -19,4 +20,5 @@ public class QuestScriptbleObject : ScriptableObject
     [field: SerializeField] public int questReward;
     [field: SerializeField] public QuestType questType;
     [field: SerializeField] public int amountForComplete;
+    [field: SerializeField] public EventScriptableObject eventAfter;
 }

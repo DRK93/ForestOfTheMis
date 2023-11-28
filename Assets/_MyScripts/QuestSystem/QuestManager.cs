@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using _MyScripts.GameEventSystem;
 using NGS.ExtendableSaveSystem;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace _MyScripts.QuestSystem
     public class QuestManager : MonoBehaviour, ISavableComponent
     {
         [field: SerializeField] private QuestJournal questJournal;
+        [field: SerializeField] private GameEventManager gameEventManager;
         [field: SerializeField] private AllQuestsInOnePlace questBase;
         public List<QuestScriptbleObject> acceptedQuests;
         public List<QuestScriptbleObject> questsCompleted;
@@ -38,7 +40,16 @@ namespace _MyScripts.QuestSystem
             {
                 acceptedQuests.Add(quest);
                 activeQuestsAmount.Add(0);
-                // questJournal.AddNewQuest(quest.questID)
+                if (quest.questType == QuestScriptbleObject.QuestType.UnOfficial)
+                {
+                    
+                }
+                else
+                {
+                    // questJournal.AddNewQuest(quest.questID)
+                }
+                
+                // gameEventManager do something or not
             }
             else
             {
@@ -57,6 +68,7 @@ namespace _MyScripts.QuestSystem
                     {
                         questsCompleted.Add(acceptedQuests[i]);
                         QuestCompletedInJournal(acceptedQuests[i].questID);
+                        QuestCOmpletedEvent(acceptedQuests[i]);
                         // remove from active qeust List etc.
                         //activeQuestsAmount.Remove(activeQuestsAmount[i]);
                         //acceptedQuests.Remove(acceptedQuests[i]);
@@ -64,7 +76,32 @@ namespace _MyScripts.QuestSystem
                 }
             }
         }
-        
+
+        private void QuestCOmpletedEvent(QuestScriptbleObject quest)
+        {
+            if (quest.questType == QuestScriptbleObject.QuestType.UnOfficial)
+            {
+                if (quest.eventAfter != null)
+                {
+                    PlayEvent();
+                }
+            }
+            else
+            {
+                PlayCompletedNotification();
+            }
+        }
+
+        private void PlayCompletedNotification()
+        {
+            
+        }
+        private void PlayEvent()
+        {
+            // event panel
+            // spawn enemies
+            // add new quest
+        }
         public void QuestCompletedInJournal(int questID)
         {
             // questJournal.CompletedQuest(questID)

@@ -11,25 +11,36 @@ namespace _MyScripts.GameEventSystem
     public class EventObject : MonoBehaviour, ISavableComponent
     {
         [field: SerializeField] private EventScriptableObject myEventData;
-        [field: SerializeField] private EventInJournalScriptableObject myEventToJournalData;
+        private EventsDatabase _eventsDatabase;
         public bool eventObjectDone;
         private int _uniqueID;
         private int _executionOrder;
 
         private void Start()
         {
-            GameObject.FindWithTag("QuestBase").GetComponent<EventsDatabase>().eventDataBase.Add(myEventData);
+            _eventsDatabase = GameObject.FindWithTag("QuestBase").GetComponent<EventsDatabase>();
+            _eventsDatabase.eventDataBase.Add(myEventData);
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            // set data to EventPanel
-            //GameObject.FindWithTag("EventPanel").GetComponent<EventPanel>().ShowEventPanel(myEventData);
+            EventStart();
         }
 
-        public void EventStart()
+        public void EventFromManager()
+        {
+            EventStart();
+        }
+        private void EventStart()
         {
             GameObject.FindWithTag("EventPanel").GetComponent<EventPanel>().ShowEventPanel(myEventData);
+        }
+
+        public void EventEnd()
+        {
+            eventObjectDone = true;
+            _eventsDatabase.RemoveEvent(myEventData);
+            this.gameObject.SetActive(false);
         }
 
         private void OnDisable()
