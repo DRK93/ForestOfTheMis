@@ -77,6 +77,10 @@ namespace _MyScripts.QuestSystem
             }
         }
 
+        public void QuestRemove(QuestScriptbleObject quest)
+        {
+            // other quests/ event will remove UnOfficial quests
+        }
         private void QuestCOmpletedEvent(QuestScriptbleObject quest)
         {
             if (quest.questType == QuestScriptbleObject.QuestType.UnOfficial)

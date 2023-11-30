@@ -9,6 +9,8 @@ namespace _MyScripts.GameEventSystem
     {
         public HashSet<EventScriptableObject> eventDataBase;
         public HashSet<EventScriptableObject> doneEventDataBase;
+        public HashSet<EventObject> eventObjectsToDo;
+        public HashSet<EventObject> eventObjectsDone;
         public HashSet<EventInJournalScriptableObject> eventJournalParts;
 
         private void Awake()

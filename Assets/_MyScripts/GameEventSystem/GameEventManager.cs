@@ -9,10 +9,7 @@ namespace _MyScripts.GameEventSystem
     {
         [field: SerializeField] private QuestJournal questJournal;
         [field: SerializeField] private EventsDatabase eventBase;
-
-        public List<EventScriptableObject> eventsUnfold;
-
-        public List<EventScriptableObject> eventCompleted;
+        public List<EventScriptableObject> eventsInMotion;
         // Start is called before the first frame update
         void Start()
         {
@@ -25,6 +22,10 @@ namespace _MyScripts.GameEventSystem
         
         }
 
+        public void AddEvent(EventScriptableObject eventToAdd)
+        {
+            eventsInMotion.Add(eventToAdd);
+        }
         public void SpawnEnemies(int questId)
         {
             

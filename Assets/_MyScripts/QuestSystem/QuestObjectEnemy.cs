@@ -12,6 +12,7 @@ namespace _MyScripts.QuestSystem
             {
                 questManager.UpdateQuestAmount(1, questObject.questID);
                 questObjectTriggered = true;
+                DeactiveQuestObject();
             }
         }
     }

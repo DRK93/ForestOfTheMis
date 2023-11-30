@@ -11,7 +11,9 @@ namespace _MyScripts.GameEventSystem
     public class EventObject : MonoBehaviour, ISavableComponent
     {
         [field: SerializeField] private EventScriptableObject myEventData;
+        private EventPanel _eventPanel;
         private EventsDatabase _eventsDatabase;
+        private GameEventManager _gameEventManager;
         public bool eventObjectDone;
         private int _uniqueID;
         private int _executionOrder;
@@ -33,11 +35,48 @@ namespace _MyScripts.GameEventSystem
         }
         private void EventStart()
         {
-            GameObject.FindWithTag("EventPanel").GetComponent<EventPanel>().ShowEventPanel(myEventData);
+            if (myEventData.thisEventType == EventScriptableObject.EventType.Panel)
+            {
+                _eventPanel = GameObject.FindWithTag("EventPanel").GetComponent<EventPanel>();
+                _eventPanel.ShowEventPanel(myEventData);
+                _eventPanel.eventDone += EventEnd;
+            }
+            else
+            {
+                _gameEventManager.AddEvent(myEventData);
+                switch (myEventData.thisEventType)
+                {
+                    case EventScriptableObject.EventType.SpawnQuest:
+                        //if (myEventData.questIDs[0]!= 0)
+                            //questManager.AddNewQuest(allQuestsBase.GetQuest(myEventData.questIDs[0]));
+                        break;
+                    case EventScriptableObject.EventType.SpawnItem:
+                        // safety check
+                        if (myEventData.questIDs[0]!= 0)
+                            _gameEventManager.SpawnObject(myEventData.questIDs[0]);
+                        break;
+                    case EventScriptableObject.EventType.SpawnEnemy:
+                        if (myEventData.questIDs[0]!= 0)
+                            _gameEventManager.SpawnEnemies(myEventData.questIDs[0]);
+                        break;
+                    case EventScriptableObject.EventType.Cutscene:
+                        //layCutscene();
+                        break;
+                    case EventScriptableObject.EventType.LocationChange:
+                        if (myEventData.questIDs[0]!= 0)
+                            _gameEventManager.ChangeScenery(myEventData.questIDs[0]);
+                        break;
+                }
+            }
         }
 
         public void EventEnd()
         {
+            if (myEventData.thisEventType == EventScriptableObject.EventType.Panel)
+            {
+                _eventPanel.eventDone -= EventEnd;
+            }
+            
             eventObjectDone = true;
             _eventsDatabase.RemoveEvent(myEventData);
             this.gameObject.SetActive(false);
@@ -56,12 +95,19 @@ namespace _MyScripts.GameEventSystem
 
         public ComponentData Serialize()
         {
-            throw new NotImplementedException();
+            ExtendedComponentData data = new ExtendedComponentData();
+            data.SetBool("doneCheck", eventObjectDone);
+            return data;
         }
 
         public void Deserialize(ComponentData data)
         {
-            throw new NotImplementedException();
+            ExtendedComponentData unpacked = (ExtendedComponentData)data;
+            eventObjectDone = unpacked.GetBool("doneCheck");
+            if (eventObjectDone)
+            {
+                EventEnd();
+            }
         }
     }
 }

@@ -16,9 +16,10 @@ namespace _MyScripts.QuestSystem
         {
             if (!questObjectTriggered)
             {
-                questManager.AddNewQuest(questObject);
+                //questManager.AddNewQuest(questObject);
                 questManager.UpdateQuestAmount(1, questObject.questID);
                 questObjectTriggered = true;
+                DeactiveQuestObject();
             }
         }
     }

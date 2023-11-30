@@ -19,14 +19,8 @@ namespace _MyScripts.GameEventSystem
         public string eventText;
         public List<GameObject> eventOptionsButtons;
         public int optionsNumber = 0;
+        public Action eventDone;
         
-        // there is a need for connection of eventData to eventManager, Quest Jouranl etc.
-
-        private void Start()
-        {
-            
-        }
-
         public void ShowEventPanel(EventScriptableObject myEventData)
         {
             int optinonsCount = myEventData.eventOptionsNumber;
@@ -73,10 +67,12 @@ namespace _MyScripts.GameEventSystem
             }
             else 
             {
+                gameEventManager.AddEvent(eventUnfold);
                 switch (eventUnfold.eventTypes[numeber])
                 {
                     case EventScriptableObject.EventType.SpawnQuest:
-                        questManager.AddNewQuest(allQuestsBase.GetQuest(eventUnfold.questIDs[numeber]));
+                        if (eventUnfold.questIDs[numeber]!= 0)
+                            questManager.AddNewQuest(allQuestsBase.GetQuest(eventUnfold.questIDs[numeber]));
                         break;
                     case EventScriptableObject.EventType.SpawnItem:
                         // safety check
@@ -138,6 +134,7 @@ namespace _MyScripts.GameEventSystem
 
         private void HideEventPanel()
         {
+            eventDone?.Invoke();
             ClearEventPanel();
             LetPlayerMove();
             eventPanel.SetActive(false);
