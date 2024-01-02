@@ -42,6 +42,7 @@ namespace _MyScripts.StateMachines.PlayerStates
 
         public override void Enter()
         {
+            StateMachine.WeaponGripManager.ChangeGrip(_blockingSo.GripNumber);
             StateMachine.WeaponChangeAllowed = false;
             StateMachine.Animator.CrossFadeInFixedTime(_blockingSo.AnimationName, _crossFadeDuration);
             StateMachine.PlayerDamageable.SuccesfulBlock += BlockedAnim;
@@ -99,6 +100,7 @@ namespace _MyScripts.StateMachines.PlayerStates
         }
         public override void Exit()
         {
+            StateMachine.WeaponGripManager.ReturnToBaseGrip(_blockingSo.GripNumber / 10);
             StateMachine.InputReader.TargetEvent -= OnTarget;
             StateMachine.PlayerDamageable.SuccesfulBlock -= BlockedAnim;
             StateMachine.Animator.speed = 1f;

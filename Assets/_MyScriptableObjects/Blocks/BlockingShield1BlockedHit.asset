@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <AnimationName>k__BackingField: 1H&Sh Blocked Hit
   <BlockingNumber>k__BackingField: 2
+  <GripNumber>k__BackingField: 11
   <TransisionDuration>k__BackingField: 0.1
   <RotateTowardsEnemyTimer>k__BackingField: 0
   <StartBlockingTime>k__BackingField: 0

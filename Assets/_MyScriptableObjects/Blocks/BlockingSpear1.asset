@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <AnimationName>k__BackingField: Spear Block
   <BlockingNumber>k__BackingField: 3
+  <GripNumber>k__BackingField: 89
   <TransisionDuration>k__BackingField: 0.1
   <RotateTowardsEnemyTimer>k__BackingField: 0.1
   <StartBlockingTime>k__BackingField: 0.1

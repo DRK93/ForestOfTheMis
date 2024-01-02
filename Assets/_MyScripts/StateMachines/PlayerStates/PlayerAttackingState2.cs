@@ -162,6 +162,7 @@ namespace _MyScripts.StateMachines.PlayerStates
     {
         //StateMachine.WeaponGripManager.ReturnToBaseGrip(_attackSo.AttackGripNumber / 10);
         // need to be sure that logic from this class will not affect outside of it, in next state
+        StateMachine.WeaponGripManager.ReturnToBaseGrip(_attackSo.AttackGripNumber / 10);
         Time.timeScale = 1f;
         StateMachine.Animator.SetFloat("Speed", 1f);
         UnsetWeapons();

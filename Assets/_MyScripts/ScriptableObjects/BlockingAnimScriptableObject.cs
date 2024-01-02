@@ -8,6 +8,7 @@ public class BlockingAnimScriptableObject : ScriptableObject
     [field: SerializeField] public string AnimationName{get; private set;}
     // blocking number - to blocking logic new, what weapon/shield is used while blocking state
     [field: SerializeField] public int BlockingNumber{get; private set;}
+    [field: SerializeField] public int GripNumber{get; private set;}
     [field: SerializeField] public float TransisionDuration{get; private set;}
     [field: SerializeField] public float RotateTowardsEnemyTimer {get; private set;}
     [field: SerializeField] public float StartBlockingTime{get; private set;}
