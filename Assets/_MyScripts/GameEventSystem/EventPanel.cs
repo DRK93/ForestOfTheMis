@@ -49,12 +49,12 @@ namespace _MyScripts.GameEventSystem
 
         private void UpdateOneOption(GameObject optionButton, string text)
         {
-            optionButton.GetComponent<TextMeshProUGUI>().text = text;
+            optionButton.GetComponentInChildren<TextMeshProUGUI>().text = text;
         }
 
         public void EventButtonOptionCLick(int buttonNumber)
         {
-            DoEventFromOption(buttonNumber);
+            //DoEventFromOption(buttonNumber);
             // do something with choses option
             HideEventPanel();
         }
@@ -125,7 +125,7 @@ namespace _MyScripts.GameEventSystem
 
         public void ClearEventPanel()
         {
-            for (int i = eventOptionsButtons.Count; i > 0; i--)
+            for (int i = eventOptionsButtons.Count-1; i > 0; i--)
             {
                 if(eventOptionsButtons[i].activeInHierarchy)
                     eventOptionsButtons[i].SetActive(false);

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c80fb3429ec0e4a846f5654e84e7c4, type: 3}
+  m_Name: MonsterEvent1
+  m_EditorClassIdentifier: 
+  thisEventType: 0
+  eventID: 10000100
+  eventText: There more monsters here. This place is full of enemies, like some dark
+    force is gathering any bad tool it could have. Before I leave this place I should
+  eventOptionsNumber: 3
+  eventOptionText:
+  - Look for monsters nest. It should be near.
+  - Check if bandits have something to do with them, maybe some rogue mage is with
+    them.
+  eventTypes: 0200000002000000
+  questIDs: 0000000000000000

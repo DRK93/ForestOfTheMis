@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_MyScenes/DemoMenu.unity
     guid: 05699e71266f2a644a1c35759ad67d4c
-  - enabled: 0
-    path: Assets/_MyScenes/DemoMission.unity
-    guid: 97bb77943f4360d4d8657d2077a23cb8
   - enabled: 1
     path: Assets/_MyScenes/DemoMission2.unity
     guid: 2a51fcd961202e24a9194403ed9edb36

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c80fb3429ec0e4a846f5654e84e7c4, type: 3}
+  m_Name: MineEvent2A
+  m_EditorClassIdentifier: 
+  thisEventType: 0
+  eventID: 10000100
+  eventText: 'Two accidents with beasts near small mining camps. It''s really dangerous
+    here. It looks as if predators here are more inteligent tha normal ones. I should
+    be wary of them. Next step I will:'
+  eventOptionsNumber: 3
+  eventOptionText:
+  - Check caves and look for other beasts.. Maybe there is something more.
+  - First things first. Still the bandits are the main treat here. Let find something
+    more.
+  eventTypes: 0100000001000000
+  questIDs: 0000000000000000

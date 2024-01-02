@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c80fb3429ec0e4a846f5654e84e7c4, type: 3}
+  m_Name: MineEvent2B
+  m_EditorClassIdentifier: 
+  thisEventType: 0
+  eventID: 10000100
+  eventText: 'What was that? Some kind of monster. I''ve never so anyone like thta.
+    Now it bacem serious. Bandits, wild beasts and monsters. There must be something
+    which lure them all here. I need to find it. Now I will:'
+  eventOptionsNumber: 3
+  eventOptionText:
+  - Follow any bandits trails to find out if they are aware of monsters here.
+  - Look for more clues about monsters activity here. Maybe I missed something before.
+  eventTypes: 0100000001000000
+  questIDs: 0000000000000000

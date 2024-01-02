@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8012981092484666500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166445432658743671}
+  - component: {fileID: 5314494636117934462}
+  m_Layer: 0
+  m_Name: GrassEraseVerySmall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166445432658743671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012981092484666500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8992070029564990743}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5314494636117934462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012981092484666500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10537d8e24a12e241ac104e5bc47e57c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eraseSize: 1
+  testDensity: 2
+  visualizeDensity: 1
+  drawObstructionDebugRays: 0
+  checkOverhangs: 0
+  overhangTolerance: 0.5
+  paintParams: {x: 1, y: 1, z: 1, w: 0.25}
+  brushTex: {fileID: 2800000, guid: e0f915bf8e8826b44bd0bc4c1ec5bee7, type: 3}
+  grassFlow: {fileID: 0}
+  terrainLayer: 6
+  obstacleMask: 1
+  raysPerFrame: 10000
+--- !u!1001 &6504453940787206284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 166445432658743671}
+    m_Modifications:
+    - target: {fileID: -3156517344631806595, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: grassEraser
+      value: 
+      objectReference: {fileID: 8012981092484666500}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144939762763606117, guid: c63db081fffa17844b7da96f18f20a88,
+        type: 3}
+      propertyPath: m_Name
+      value: ShowGrassEraser
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c63db081fffa17844b7da96f18f20a88, type: 3}
+--- !u!4 &8992070029564990743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2778217846430928283, guid: c63db081fffa17844b7da96f18f20a88,
+    type: 3}
+  m_PrefabInstance: {fileID: 6504453940787206284}
+  m_PrefabAsset: {fileID: 0}

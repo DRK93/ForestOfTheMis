@@ -41,7 +41,7 @@ MonoBehaviour:
     m_Value: 0
   sampleCount:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 24
   animateSamplePosition:
     m_OverrideState: 0
     m_Value: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
     m_Value: 1
   fogDensity:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 12
   anisotropy:
     m_OverrideState: 0
     m_Value: 0.2
@@ -115,7 +115,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {fileID: 0}
   colorInfluence:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   directionalForward:
     m_OverrideState: 0

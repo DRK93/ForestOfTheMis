@@ -9,11 +9,12 @@ namespace _MyScripts.GameEventSystem
     {
         [field: SerializeField] private QuestJournal questJournal;
         [field: SerializeField] private EventsDatabase eventBase;
+        private EnemySpawner _enemSpawner;
         public List<EventScriptableObject> eventsInMotion;
         // Start is called before the first frame update
         void Start()
         {
-        
+            _enemSpawner = GetComponent<EnemySpawner>();
         }
 
         // Update is called once per frame

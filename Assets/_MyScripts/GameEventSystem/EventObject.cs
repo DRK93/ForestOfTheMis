@@ -26,7 +26,8 @@ namespace _MyScripts.GameEventSystem
 
         private void OnTriggerEnter(Collider other)
         {
-            EventStart();
+            if(other.gameObject.tag == "Player")
+                EventStart();
         }
 
         public void EventFromManager()

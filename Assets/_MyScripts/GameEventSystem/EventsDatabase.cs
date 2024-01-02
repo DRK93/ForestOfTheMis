@@ -17,6 +17,8 @@ namespace _MyScripts.GameEventSystem
         {
             eventDataBase = new HashSet<EventScriptableObject>();
             eventJournalParts = new HashSet<EventInJournalScriptableObject>();
+            doneEventDataBase = new HashSet<EventScriptableObject>();
+
         }
 
         public void RemoveEvent( EventScriptableObject eventDone)

@@ -6,11 +6,16 @@ namespace _MyScripts.QuestSystem
 {
     public class QuestObjectEnemy : QuestObject
     {
+        
         public void TriggerQuestAfterEnemyDeath()
         {
             if (!questObjectTriggered)
             {
-                questManager.UpdateQuestAmount(1, questObject.questID);
+                foreach (var questIndex in questIDs)
+                {
+                    questManager.UpdateQuestAmount(1, questIndex);
+                }
+                
                 questObjectTriggered = true;
                 DeactiveQuestObject();
             }

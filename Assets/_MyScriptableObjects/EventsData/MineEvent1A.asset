@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c80fb3429ec0e4a846f5654e84e7c4, type: 3}
+  m_Name: MineEvent1A
+  m_EditorClassIdentifier: 
+  thisEventType: 0
+  eventID: 10000100
+  eventText: Small mining camp. There are few chunks, old rusty tools and no trace
+    of human for some time.
+  eventOptionsNumber: 3
+  eventOptionText:
+  - It's abandoned for some time.
+  - Something is not right, these few chunks could have quite high value for local
+    folks.
+  eventTypes: 0100000002000000
+  questIDs: 0000000000000000

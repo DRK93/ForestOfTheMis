@@ -21,4 +21,5 @@ public class QuestScriptbleObject : ScriptableObject
     [field: SerializeField] public QuestType questType;
     [field: SerializeField] public int amountForComplete;
     [field: SerializeField] public EventScriptableObject eventAfter;
+    [field: SerializeField] public QuestJournalPartsScriptableObjects questJournalData;
 }

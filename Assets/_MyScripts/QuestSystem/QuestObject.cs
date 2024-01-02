@@ -11,6 +11,7 @@ namespace _MyScripts.QuestSystem
         public QuestManager questManager;
         public AllQuestsInOnePlace questBase;
         public bool questObjectTriggered;
+        public List<int> questIDs;
         [SerializeField] private int _uniqueID;
         [SerializeField] private int _executionOrder;
 

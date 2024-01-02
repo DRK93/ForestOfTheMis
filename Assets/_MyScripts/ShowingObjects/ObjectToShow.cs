@@ -25,6 +25,13 @@ namespace _MyScripts.ShowingObjects
                 meshRenderer.enabled = false;
                 if (transform.parent.TryGetComponent<MeshCollider>(out MeshCollider meshCollider))
                     meshCollider.enabled = false;
+                else
+                {
+                    if (transform.parent.TryGetComponent<Collider>(out Collider thisCollider))
+                    {
+                        thisCollider.enabled = false;
+                    }
+                }
             }
             
 
@@ -54,6 +61,13 @@ namespace _MyScripts.ShowingObjects
                 meshRenderer.enabled = true;
                 if (transform.parent.TryGetComponent<MeshCollider>(out MeshCollider meshCollider))
                     meshCollider.enabled = true;
+                else
+                {
+                    if (transform.parent.TryGetComponent<Collider>(out Collider thisCollider))
+                    {
+                        thisCollider.enabled = true;
+                    }
+                }
             }
             if (additionalObject.Count != 0)
             {
@@ -81,6 +95,13 @@ namespace _MyScripts.ShowingObjects
                 meshRenderer.enabled = false;
                 if (transform.parent.TryGetComponent<MeshCollider>(out MeshCollider meshCollider))
                     meshCollider.enabled = false;
+                else
+                {
+                    if (transform.parent.TryGetComponent<Collider>(out Collider thisCollider))
+                    {
+                        thisCollider.enabled = false;
+                    }
+                }
             }
             if (additionalObject.Count != 0)
             {
