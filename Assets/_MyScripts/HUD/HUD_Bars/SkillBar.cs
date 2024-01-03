@@ -34,19 +34,20 @@ namespace _MyScripts.HUD.HUD_Bars
     
     private void OnEnable()
     {
-        if (AttackBar)
-        {
-            GameObject.FindWithTag("Player").GetComponent<PlayerStateMachine>().AttackBar = this;
-        }
-        else
-            GameObject.FindWithTag("Player").GetComponent<PlayerStateMachine>().SkillBar = this;
+        SetActiveInPlayer();
         wasActive = true;
     }
 
     private void Start()
     {
-        if(!starterBar)
+        if (!starterBar)
+        {
             gameObject.SetActive(false);
+        }
+        else
+        {
+            SetActiveInPlayer();
+        }
     }
 
     private void OnDisable()
@@ -54,6 +55,15 @@ namespace _MyScripts.HUD.HUD_Bars
         wasActive = false;
     }
 
+    private void  SetActiveInPlayer()
+    {
+        if (AttackBar)
+        {
+            GameObject.FindWithTag("Player").GetComponent<PlayerStateMachine>().AttackBar = this;
+        }
+        else
+            GameObject.FindWithTag("Player").GetComponent<PlayerStateMachine>().SkillBar = this;
+    }
     public ComponentData Serialize()
     {
         ExtendedComponentData data = new ExtendedComponentData();

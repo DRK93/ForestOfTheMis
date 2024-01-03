@@ -96,7 +96,8 @@ namespace _MyScripts.Combat.WeaponMechanics
 
         public void DisableMainWeapon()
         {
-            _mainWeaponDamage.enabled = false;
+            if(_mainWeaponDamage != null)
+                _mainWeaponDamage.enabled = false;
         }
 
          public void SecondWeaponEnable(int damage, float knockback, bool blockableAttack, int blockCost)

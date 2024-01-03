@@ -29,6 +29,7 @@ namespace _MyScripts.Combat.WeaponMechanics
         [SerializeField] private Transform twoHandedTransform2;
         [SerializeField] private Transform twoHandedTransform3;
         [SerializeField] private Transform twoHandedTransform4;
+        [SerializeField] private Transform twoHandedTransform5;
         [SerializeField] private Transform spearMovementTransform;
         [SerializeField] private Transform spearBlockTransform;
         [SerializeField] private Transform spearTransform0;
@@ -116,6 +117,10 @@ namespace _MyScripts.Combat.WeaponMechanics
                 case 54:
                     swordTwoHandedTransformBase.position = twoHandedTransform4.position;
                     swordTwoHandedTransformBase.rotation = twoHandedTransform4.rotation;
+                    break;
+                case 55:
+                    swordTwoHandedTransformBase.position = twoHandedTransform5.position;
+                    swordTwoHandedTransformBase.rotation = twoHandedTransform5.rotation;
                     break;
                 case 58:
                     swordTwoHandedTransformBase.position = twoHandedMovementTransform.position;

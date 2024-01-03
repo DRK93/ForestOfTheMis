@@ -27,7 +27,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   settings:
-    renderPassEvent: 450
+    renderPassEvent: 400
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,4 +158,4 @@ MonoBehaviour:
   m_Name: ScreenSpaceShadows
   m_EditorClassIdentifier: 
   m_Active: 1
-  m_Shader: {fileID: 0}
+  m_Shader: {fileID: 4800000, guid: 0f854b35a0cf61a429bd5dcfea30eddd, type: 3}
