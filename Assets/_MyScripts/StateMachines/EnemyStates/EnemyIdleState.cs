@@ -22,7 +22,7 @@ namespace _MyScripts.StateMachines.EnemyStates
         public override void Tick(float deltaTime)
         {
             Move(deltaTime);
-            if (InDetectionRange())
+            if (InDetectionRange(StateMachine.DetectionRange))
             {
                 //Debug.Log("In Range");
                 StateMachine.SwitchState(new EnemyChasingState(StateMachine));

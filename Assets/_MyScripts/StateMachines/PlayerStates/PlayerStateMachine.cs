@@ -28,6 +28,7 @@ namespace _MyScripts.StateMachines.PlayerStates
     [field: SerializeField] public HUDManager HUDManager { get; private set; }
     [field: SerializeField] public SkillBar AttackBar { get;  set; }
     [field: SerializeField] public SkillBar SkillBar { get; set; }
+    [field: SerializeField] public EnemiesPredictionCenter EnemiesPredictionCenter { get; set; }
     [SerializeField] public LayerMask layerMask;
     [field: SerializeField] public bool WeaponChangeAllowed { get; set; }
     [field: SerializeField] public float FreeMovementSpeed{get; private set;}

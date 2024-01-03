@@ -43,6 +43,7 @@ namespace _MyScripts.StateMachines.PlayerStates
         StateMachine.InputReader.DodgeEvent += DoDodge;
         StateMachine.InputReader.TargetEvent += OnTarget;
         _comboWindowTimer = 0f;
+        
     }
     public override void Tick(float deltaTime)
     {
@@ -51,7 +52,12 @@ namespace _MyScripts.StateMachines.PlayerStates
         StateMachine.SkillUIManager.MoveAttackArrow(normalizedTime, StateMachine.AttackNumber);
         if(normalizedTime < _attackSo.RotateTowardsEnemyTimer)
             FaceTarget();
-
+        
+        // temporary check to see enemies reactions
+        if (normalizedTime <= 0.1f)
+            EnemiesAttackAware();
+        //
+        
         if(normalizedTime >= _attackSo.ArmAttackTimes[_attackIndexer] && !_armedAttack && normalizedTime < _attackSo.DisarmAttackTimes[_attackIndexer])
         {
             ArmAttack();
@@ -372,6 +378,11 @@ namespace _MyScripts.StateMachines.PlayerStates
     {
         return Mathf.Sqrt(Mathf.Pow(StateMachine.transform.position.x - enemyTransform.position.x , 2) 
         + Mathf.Pow(StateMachine.transform.position.z - enemyTransform.position.z, 2));
+    }
+
+    private void EnemiesAttackAware()
+    {
+        StateMachine.EnemiesPredictionCenter.PlayerAttack();
     }
 
 }

@@ -36,11 +36,27 @@ namespace _MyScripts.StateMachines.EnemyStates
         if(StateMachine.Target != null)
             _trafficTimer += deltaTime;
 
-        if (!InDetectionRange())
+        if (!InDetectionRange(StateMachine.DetectionRange))
         {
             StateMachine.SwitchState(new EnemyIdleState(StateMachine));
             return;
         }
+
+        if (InDetectionRange(StateMachine.PlayerAttackAwareRange))
+        {
+            StateMachine.EnemiesPredictionCenter.EnemyReaction += PlayerAttackComing;
+            StateMachine.PlayerAwareness = true;
+        }
+        else
+        {
+            if (StateMachine.PlayerAwareness)
+            {
+                StateMachine.PlayerAwareness = false;
+                StateMachine.EnemiesPredictionCenter.EnemyReaction -= PlayerAttackComing;
+            }
+                
+        }
+        
         if (IsInAttackRange())
         {
             //Debug.Log("Attack");
@@ -148,6 +164,8 @@ namespace _MyScripts.StateMachines.EnemyStates
                     break;
             }
     }
+
+
 }
 }
 

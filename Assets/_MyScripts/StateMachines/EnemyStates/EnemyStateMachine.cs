@@ -21,6 +21,8 @@ namespace _MyScripts.StateMachines.EnemyStates
     [field: SerializeField] public Damageable EnemyDamageable {get; private set;}
     [field: SerializeField] public WeaponHandlerer WeaponHandlerer {get; private set;}
     [field: SerializeField] public WeaponGripManager WeaponGripManager { get; private set; }
+
+    public EnemiesPredictionCenter EnemiesPredictionCenter;
     //
     [field: SerializeField] public float MovementSpeed {get; private set;}
     [field: SerializeField] public float WalkSpeed {get; private set;}
@@ -28,6 +30,8 @@ namespace _MyScripts.StateMachines.EnemyStates
     public int locomotionNumber;
     public string locomotionName;
     [field: SerializeField] public float DetectionRange {get; private set;}
+    [field: SerializeField] public float PlayerAttackAwareRange { get; private set; }
+    [field: SerializeField] public bool PlayerAwareness { get; set; }
     [field: SerializeField] public float AttackRange {get; private set;}
     [field: SerializeField] public int AttackDamage {get; private set;}
     [field: SerializeField] public float AttackKnockback {get; private set;}
@@ -141,6 +145,11 @@ namespace _MyScripts.StateMachines.EnemyStates
         {           
             CurrentScheme = EnemyStats.EnemySchemes[5];
         }
+    }
+
+    public void CalculatePlayerAttackReaction()
+    {
+        
     }
 }
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2HSPAttack3
   m_EditorClassIdentifier: 
   <AnimationName>k__BackingField: 2H Vertical Heavy Slash
-  <AttackGripNumber>k__BackingField: 53
+  <AttackGripNumber>k__BackingField: 54
   <TransisionDuration>k__BackingField: 0.2
   <ComboAniamtion>k__BackingField: 0
   <BlockableAttack>k__BackingField: 0

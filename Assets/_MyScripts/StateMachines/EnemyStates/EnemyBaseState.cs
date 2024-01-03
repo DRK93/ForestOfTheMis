@@ -39,12 +39,12 @@ namespace _MyScripts.StateMachines.EnemyStates
                 StateMachine.transform.rotation = Quaternion.LookRotation(targetDirection);
             }
         }
-        protected bool InDetectionRange()
+        protected bool InDetectionRange(float currentRange)
         {
             // temporal
             if(StateMachine.Target.GetComponent<Damageable>().IsDead) {return false;}
             float toTargetSqr = (StateMachine.Target.transform.position - StateMachine.transform.position).sqrMagnitude;
-            return toTargetSqr <= StateMachine.DetectionRange * StateMachine.DetectionRange;
+            return toTargetSqr <= currentRange * currentRange;
         }
 
         protected void SetLocomotionAnimation()
@@ -68,6 +68,11 @@ namespace _MyScripts.StateMachines.EnemyStates
                     StateMachine.locomotionName = "1H&Sh Locomotion";
                     break;
             }
+        }
+        protected void PlayerAttackComing()
+        {
+            // logic, what will do Enemy based on its stats and other logic
+            StateMachine.CalculatePlayerAttackReaction();
         }
         
     }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2HComboAttack5
   m_EditorClassIdentifier: 
   <AnimationName>k__BackingField: 2H Strong Slash Left 2
-  <AttackGripNumber>k__BackingField: 51
+  <AttackGripNumber>k__BackingField: 55
   <TransisionDuration>k__BackingField: 0.2
   <ComboAniamtion>k__BackingField: 0
   <BlockableAttack>k__BackingField: 0

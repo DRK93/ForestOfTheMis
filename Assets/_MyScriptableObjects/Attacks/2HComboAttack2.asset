@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2HComboAttack2
   m_EditorClassIdentifier: 
   <AnimationName>k__BackingField: 2H Spin Attack Right
-  <AttackGripNumber>k__BackingField: 52
+  <AttackGripNumber>k__BackingField: 51
   <TransisionDuration>k__BackingField: 0.3
   <ComboAniamtion>k__BackingField: 0
   <BlockableAttack>k__BackingField: 0
